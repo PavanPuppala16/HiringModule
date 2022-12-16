@@ -1,0 +1,158 @@
+﻿@using HiringOperation.Models;
+@model Model1
+@{
+    ViewData["Title"] = "REGISTER";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<html>
+<head>
+    <link href="Styles/JobStyle.css" type="text/css" rel="Stylesheet" />
+    <link href="Styles/gridstyles.css" rel="Stylesheet" type="text/css" />
+    <link href="Styles/Calendar.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="ndate/datetimepicker_css.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <style type="text/css">
+        #calendarContainerOverride table {
+            width: 0px;
+            height: 0px;
+        }
+
+            #calendarContainerOverride table tr td {
+                padding: 0;
+                margin: 0;
+            }
+
+        #success_message {
+            display: none;
+        }
+
+        section.py-5 {
+            padding: 48px 0 !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+    <section class="text-black">
+        <div class="container-fluid">
+            <div class="grid-container">
+                <div class="row">
+                    <div class="caption col-sm-5">
+                        <h4 class="page-title font-weight-bold">ADMIN ADDING USERS</h4>
+                    </div>
+                </div>
+                <hr />
+                <div id="formgrid" class="formgrid">
+                    <div>
+
+                        <div class="row">
+                            <div class="caption col-sm-6">
+
+
+                                @using (Html.BeginForm())
+                                {
+                                    @Html.AntiForgeryToken()
+                                    <h4 class="mb-5 text-secondary"></h4>
+                                    <div class="row">
+                                        <div class="mb-6 col-md-6">
+                                            <label> RegisterId<span class="text-danger">*</span></label>
+                                            @Html.TextBoxFor(model => model.RegisterId, new { @class = "form-control", placeholder="Enter RegisterId" })
+                                            @Html.ValidationMessageFor(model => model.RegisterId, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="mb-6 col-md-6">
+                                            <label> FirstName<span class="text-danger">*</span></label>
+                                            @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", placeholder="Enter FirstName" })
+                                            @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="mb-6 col-md-6">
+                                            <label>LastName<span class="text-danger">*</span></label>
+                                            @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", placeholder="Enter LastName" })
+                                            @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="mb-6 col-md-6">
+                                            <label>EmailID<span class="text-danger">*</span></label>
+                                            @Html.TextBoxFor(model => model.EmailID, new { @class = "form-control", placeholder="Enter EmailID" })
+                                            @Html.ValidationMessageFor(model => model.EmailID, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <label>Password<span class="text-danger">*</span></label>
+                                            @Html.TextBoxFor(model => model.Password, new { @class = "form-control", placeholder="Enter Password" })
+                                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div>
+                                            <div class="mb-4 col-md-12">
+                                                <label>Gender<span class="text-danger">*</span></label>
+                                                @Html.RadioButtonFor(model => model.Gender, "MALE", new { id = "male-true"  })
+                                                @Html.Label("male-true", "Male")
+                                                @Html.RadioButtonFor(model => model.Gender, "FEMALE", new { id = "female-true"})
+                                                @Html.Label("female-true", "Female")
+                                                @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-3 col-md-6">
+                                                <label>DOB<span class="text-danger">*</span></label>
+                                                @Html.EditorFor(model => model.Dob, new { htmlAttributes = new { @class = "form-control input-md", @placeholder = "Dob"} })
+                                                @Html.ValidationMessageFor(model => model.Dob, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-3 col-md-6">
+                                                <label>ROLE<span class="text-danger">*</span></label>
+                                                @Html.DropDownListFor(model => model.Role, new List<SelectListItem> {
+                                            new SelectListItem { Text="--Select--",Value="--select--"},
+                                            new SelectListItem { Text="CEO",Value="CEO"},
+                                            new SelectListItem { Text="MANAGER",Value="MANAGER"},
+                                            new SelectListItem { Text="TRAINER",Value="TRAINER"},
+                                            new SelectListItem { Text="CO-ORDINATER",Value="CO-ORDINATER"},
+                                            new SelectListItem { Text="INTERVIWER",Value="INTERVIWER"}
+
+
+                                            }, new { @class = "form-control" })
+                                            </div>
+                                            <div class="mb-3 col-md-6">
+                                                <label>Status<span class="text-danger">*</span></label>
+                                                @Html.DropDownListFor(m => m.Status, new List<SelectListItem>
+                                            { new SelectListItem{Text="--Select--", Value="0"},
+                                            new SelectListItem{Text="Active", Value="Active"},
+                                            new SelectListItem{Text="InActive", Value="InActive"}
+                                            }, new { @class = "form-control" })
+                                            </div>
+                                                <div>
+                                                    <div class="mb-5 col-md-8">
+                                                        <label>InsertionDate<span class="text-danger">*</span></label>
+                                                        @Html.EditorFor(model => model.InsertionDate, new { htmlAttributes = new { @class = "form-control input-md", @placeholder = "InsertionDate"} })
+                                                        @Html.ValidationMessageFor(model => model.InsertionDate, "", new { @class = "text-danger" })
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            @* <div class="col-md-7">
+                                        <p class="text-center mt-3 text-secondary">Go to Login page  @Html.ActionLink("login","login","Project")</p>
+                                        </div>*@
+                                            <div class="col-md-5">
+                                                <input type="submit" class="btn btn-primary float-end" value="Submit" onclick="alert('Successfully Submitted!')">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+            
+
+                                }
+
+
+                            </div>
+                        </div>
+    </section>
+    <!-- End -->
+
+
+</body>
+</html>
+<!-- Content Start -->

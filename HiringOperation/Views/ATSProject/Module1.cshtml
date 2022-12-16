@@ -1,0 +1,311 @@
+﻿@model IEnumerable<HiringOperation.Models.HiringSTD>
+
+@{
+    ViewData["Title"] = "Module1";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    @* <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>*@
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Content Start -->
+    <section class="text-black">
+        <div class="container-fluid">
+            <div class="grid-container">
+                <div class="row">
+                    <div class="caption col-sm-7">
+                        <h6 class="page-title">L2 Student Data</h6>
+                        <asp:Label ID="lbl_error" runat="server" Text="Label" Visible="False" ForeColor="Red"></asp:Label>
+                    </div>
+                   
+                </div>
+                <hr />
+                <div id="formgrid" class="formgrid">
+                    <table class="table table-bordered table-striped dtables" style="width: 100%" id="testtable">
+
+ 
+
+                       <tr>
+
+        <th>HallTicketNo</th>
+        <th>NameOfTheStudent</th>
+        <th>Emailid</th>
+        <th>EngCollegeName</th>
+        <th>BtechYearOfPassOut</th>
+        <th>Total_backlogs</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+           <td>@item.Hall_ticket_no</td>
+            <td>@item.Name_of_the_student</td>
+            <td>@item.Emailid</td>
+              <td>@item.Engineering_College_Name</td>
+            <td>@item.Btech_Year_of_Pass_out</td>
+            <td>@item.Total_backlogs</td>
+            <td><p style="color:red">Waiting for L1 Interview</p></td>
+
+            <td>
+                
+                                    
+              
+                                    <!-- Modal -->
+                                    @using (Html.BeginForm("Module1", "ATSProject", FormMethod.Post))
+                                    {
+
+ 
+
+                                        <div class="modal fade" id="updateFieldModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document" id="form-modal">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Level-1</h5>
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">L1 Results</h4>
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        </div>
+                                                    </div>
+
+ 
+                                                    <div class="modal-body">
+                                                        <label class="col-sm-2 col-form-label">Hallticket</label>
+                                                        <input type="text" id="texens" name="user" value="texens" />
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-2 col-form-label">Remarks</label>
+                                                        <div class="col-sm-4 inputGroupContainer">
+                                                            <div class="input-group">
+                                                                <input type="text" id="txtName" name="searchparam" class="form-control" placeholder="Enter Remarks" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-2 col-form-label">Score</label>
+                                                        <div class="col-sm-4 inputGroupContainer">
+                                                            <div class="input-group">
+                                                                <input type="text" id="txtName" name="searchparam" class="form-control" placeholder="Enter Score" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-2 col-form-label">DateOfL1Exam</label>
+                                                        <div class="col-sm-4 inputGroupContainer">
+                                                            <div class="input-group">
+                                                                <input type="date" id="datetime" name="searchparam" class="form-control" placeholder="Enter DOE" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                             @*   </div>*@
+                                                     @using (Html.BeginForm())
+    {
+        
+    }
+                                                    <div class="modal-footer">
+
+                                                        <input type="submit" class="btn btn-primary float-end" value="Submit" onclick="alert('Successfully Submitted!')">
+
+
+                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                    <center>
+
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+                                            <a href="#" class="editbtn" data-id="@item.Hall_ticket_no" data-toggle="modal" data-target="#updateFieldModal">L1 Interview Approval</a>
+                                        </button>
+
+
+
+                                    </center>
+
+ 
+
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+                <br />
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+    <script type="text/javascript" src="Revamp/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="Revamp/js/dataTables.bootstrap4.min.js"></script>
+   
+
+ 
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+                $("#testtable").on("click", ".editbtn", function() {
+                    var currentid = $(this).closest("tr").find("td").eq(0).text();
+                    $("input:text#texens").val(currentid); 
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @* <table class="table table-bordered table-dark">
+
+    <tr>
+
+        <th>HallTicketNo</th>
+        <th>NameOfTheStudent</th>
+        <th>Emailid</th>
+        <th>EngCollegeName</th>
+        <th>BtechYearOfPassOut</th>
+        <th>Total_backlogs</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Hall_ticket_no</td>
+            <td>@item.Name_of_the_student</td>
+            <td>@item.Emailid</td>
+            <td>@item.Engineering_College_Name</td>
+            <td>@item.Btech_Year_of_Pass_out</td>
+            <td>@item.Total_backlogs</td>
+            <td><p style="color:red">Waiting for L1 Interview</p></td>
+
+            <td>
+                @using (Html.BeginForm("Module1", "ATSProject", FormMethod.Post))
+                {
+                    <center>
+                       
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                        L1 Approval
+                                    </button>
+                                    
+                                </center>                                       
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">L1 Results</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">HallTicket</label>                                  
+                                    <div class="col-sm-4 inputGroupContainer">
+                                            <div class="modal-body">
+                                                <input type="text" id="texens" name="user" value="@item.Hall_ticket_no" />
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Remarks</label>                                  
+                                    <div class="col-sm-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <input type="text" id="txtName" name="searchparam" class="form-control" placeholder="Enter Remarks" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Score</label>
+                                    <div class="col-sm-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <input type="text" id="txtName" name="searchparam" class="form-control" placeholder="Enter Score" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">DateOfL1Exam</label>
+                                    <div class="col-sm-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <input type="date" id="datetime" name="searchparam" class="form-control" placeholder="Enter DOE" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              
+                                        <input type="submit" class="btn btn-primary float-end" value="Submit" onclick="alert('Successfully Submitted!')">
+
+                  
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    <script type="text/javascript" src="Revamp/js/jquery.dataTables.min.js"></script>
+                    <script type="text/javascript" src="Revamp/js/dataTables.bootstrap4.min.js"></script>
+
+
+
+
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $("#testtable").on("click", ".editbtn", function () {
+                                var Hall_ticket_no = $(this).closest("tr").find("td").eq(0).text();
+                                $("input:text#texens").val(Hall_ticket_no);
+                            });
+                        });
+                    </script>
+                  
+                }
+</td>
+
+            @*<td>
+        @Html.ActionLink("Update","Edit","StudentData", new {REFERANCEID = item.REFERANCEID},null) |
+        @Html.ActionLink("Delete","DELETE","StudentData", new {REFERANCEID = item.REFERANCEID}, new { onclick = "return confirm('Are sure wants to delete?');" })
+        </td>
+</tr>
+        
+    }
+</table>
+*@

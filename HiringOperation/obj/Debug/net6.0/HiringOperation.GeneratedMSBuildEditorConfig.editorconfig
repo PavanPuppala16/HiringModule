@@ -1,0 +1,156 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HiringOperation
+build_property.RootNamespace = HiringOperation
+build_property.ProjectDir = C:\Users\PavanPuppala\source\repos\HiringOperation\HiringOperation\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\PavanPuppala\source\repos\HiringOperation\HiringOperation
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/Condition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxDb25kaXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/EDIT.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxFRElULmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/Forgetpassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxGb3JnZXRwYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/FORGOTPASSWORDOtp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxGT1JHT1RQQVNTV09SRE90cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/LOGIN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxMT0dJTi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/LogOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxMb2dPdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/ManageSTD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxNYW5hZ2VTVEQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/Model.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxNb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/Model2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxNb2RlbDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/ModelL2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxNb2RlbEwyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/Module1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxNb2R1bGUxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/PopupInsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxQb3B1cEluc2VydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/REGISTER.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxSRUdJU1RFUi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/SendingMail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxTZW5kaW5nTWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/SETTINGNEWPASSWORD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxTRVRUSU5HTkVXUEFTU1dPUkQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/Totaldata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxUb3RhbGRhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/Totaldata1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxUb3RhbGRhdGExLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/UserData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxVc2VyRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/ATSProject/VerifyOtp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVRTUHJvamVjdFxWZXJpZnlPdHAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/BulkData/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVsa0RhdGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/Login/Adminlogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWRtaW5sb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/Login/TrainerLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cVHJhaW5lckxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/SendMailer/BuutonDiasable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VuZE1haWxlclxCdXV0b25EaWFzYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/SendMailer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VuZE1haWxlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/Shared/_TrainersLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UcmFpbmVyc0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PavanPuppala/source/repos/HiringOperation/HiringOperation/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-c0i5wto4dr

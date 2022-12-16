@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BuutonDiasable</title>
+    <script>
+        function save() {
+            var msg = document.getElementById('msg');
+            msg.innerHTML = 'kk';
+        }
+    </script>
+</head>
+<body>
+    <p>Click the button to submit data!</p>
+    <p>
+        <input type='submit' value='Submit' id='btClickMe'
+               onclick='save(); this.disabled = true;' />
+    </p>
+    <p id="msg"></p>
+</body>
+</html>
